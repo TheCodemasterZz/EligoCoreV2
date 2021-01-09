@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30804.86
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EligoCore.Api", "EligoCore.Api\EligoCore.Api.csproj", "{9111B422-A192-4C74-AD1B-EEDE5FED37F6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EligoCore.Messaging", "EligoCore.Messaging\EligoCore.Messaging.csproj", "{9899C001-76AA-4A81-A79D-4AB78D207C70}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EligoCore.Service", "EligoCore.Service\EligoCore.Service.csproj", "{E3AEBB3E-F22F-4386-82DC-787D98358784}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EligoCore.Data.MSSQL", "EligoCore.Data.MsSQL\EligoCore.Data.MSSQL.csproj", "{EDA5AA5C-67AA-4813-9AAA-110BD6946CCA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EligoCore.Domain", "EligoCore.Domain\EligoCore.Domain.csproj", "{F2E267E0-F295-4DA1-8A9E-5924C1E0C48D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EligoCore", "EligoCore\EligoCore.csproj", "{B750E6BA-CF2B-4DCA-B866-14E6BA6C33F0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9111B422-A192-4C74-AD1B-EEDE5FED37F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9111B422-A192-4C74-AD1B-EEDE5FED37F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9111B422-A192-4C74-AD1B-EEDE5FED37F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9111B422-A192-4C74-AD1B-EEDE5FED37F6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9899C001-76AA-4A81-A79D-4AB78D207C70}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9899C001-76AA-4A81-A79D-4AB78D207C70}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9899C001-76AA-4A81-A79D-4AB78D207C70}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9899C001-76AA-4A81-A79D-4AB78D207C70}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E3AEBB3E-F22F-4386-82DC-787D98358784}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E3AEBB3E-F22F-4386-82DC-787D98358784}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E3AEBB3E-F22F-4386-82DC-787D98358784}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E3AEBB3E-F22F-4386-82DC-787D98358784}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EDA5AA5C-67AA-4813-9AAA-110BD6946CCA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EDA5AA5C-67AA-4813-9AAA-110BD6946CCA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EDA5AA5C-67AA-4813-9AAA-110BD6946CCA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EDA5AA5C-67AA-4813-9AAA-110BD6946CCA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F2E267E0-F295-4DA1-8A9E-5924C1E0C48D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2E267E0-F295-4DA1-8A9E-5924C1E0C48D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2E267E0-F295-4DA1-8A9E-5924C1E0C48D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2E267E0-F295-4DA1-8A9E-5924C1E0C48D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B750E6BA-CF2B-4DCA-B866-14E6BA6C33F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B750E6BA-CF2B-4DCA-B866-14E6BA6C33F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B750E6BA-CF2B-4DCA-B866-14E6BA6C33F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B750E6BA-CF2B-4DCA-B866-14E6BA6C33F0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {869DB9B2-8FD5-47BE-87C1-0BBC5A33FD70}
+	EndGlobalSection
+EndGlobal
