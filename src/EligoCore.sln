@@ -5,8 +5,6 @@ VisualStudioVersion = 16.0.30804.86
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EligoCore.Api", "EligoCore.Api\EligoCore.Api.csproj", "{9111B422-A192-4C74-AD1B-EEDE5FED37F6}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EligoCore.Messaging", "EligoCore.Messaging\EligoCore.Messaging.csproj", "{9899C001-76AA-4A81-A79D-4AB78D207C70}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EligoCore.Service", "EligoCore.Service\EligoCore.Service.csproj", "{E3AEBB3E-F22F-4386-82DC-787D98358784}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EligoCore.Data.MSSQL", "EligoCore.Data.MsSQL\EligoCore.Data.MSSQL.csproj", "{EDA5AA5C-67AA-4813-9AAA-110BD6946CCA}"
@@ -25,10 +23,6 @@ Global
 		{9111B422-A192-4C74-AD1B-EEDE5FED37F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9111B422-A192-4C74-AD1B-EEDE5FED37F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9111B422-A192-4C74-AD1B-EEDE5FED37F6}.Release|Any CPU.Build.0 = Release|Any CPU
-		{9899C001-76AA-4A81-A79D-4AB78D207C70}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9899C001-76AA-4A81-A79D-4AB78D207C70}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9899C001-76AA-4A81-A79D-4AB78D207C70}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9899C001-76AA-4A81-A79D-4AB78D207C70}.Release|Any CPU.Build.0 = Release|Any CPU
 		{E3AEBB3E-F22F-4386-82DC-787D98358784}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{E3AEBB3E-F22F-4386-82DC-787D98358784}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E3AEBB3E-F22F-4386-82DC-787D98358784}.Release|Any CPU.ActiveCfg = Release|Any CPU

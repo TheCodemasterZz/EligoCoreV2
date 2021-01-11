@@ -4,22 +4,22 @@ using System.Threading;
 using System.Threading.Tasks;
 using EligoCore.Interfaces;
 using EligoCore.Domain;
-using EligoCore.Domain.Entities.References;
+using EligoCore.Domain.Entities;
 
 namespace EligoCore.Data.MSSQL.Repositories
 {
-    public class RefCountryRepository : IRefCountryRepository
+    public class MessageRepository : IMessageRepository
     {
         private readonly IUnitOfWork _unitOfWork;
 
-        public RefCountryRepository(IUnitOfWork unitOfWork)
+        public MessageRepository(IUnitOfWork unitOfWork)
         {
             _unitOfWork = unitOfWork ?? throw new ArgumentNullException(nameof(unitOfWork));
         }
 
-        public async Task CreateRefCountry(RefCountry refCountry, CancellationToken cancellationToken = default)
+        public async Task CreateMessage(Message message, CancellationToken cancellationToken = default)
         {
-            await _unitOfWork.AddAsync(refCountry, cancellationToken);
+            await _unitOfWork.AddAsync(message, cancellationToken);
             await _unitOfWork.SaveChangesAsync(cancellationToken);
         }
 

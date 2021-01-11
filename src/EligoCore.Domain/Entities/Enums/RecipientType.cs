@@ -6,9 +6,10 @@ using System.Threading.Tasks;
 
 namespace EligoCore.Domain.Entities.Enums
 {
-    public enum UserType
+    public enum RecipientType
     {
-        User = 1,
-        Administrator = 2
+        SMS = 1,
+        Whatsapp = 2,
+        EMail = 3
     }
 }

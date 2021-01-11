@@ -1,4 +1,4 @@
-﻿using EligoCore.Service.DTOs;
+﻿using EligoCore.Service.Models;
 using System;
 using System.Collections.Generic;
 using System.Text;

@@ -20,7 +20,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\EligoCore.Data.MSSQL\EligoCore.Data.MSSQL.csproj" />
-    <ProjectReference Include="..\EligoCore.Messaging\EligoCore.Messaging.csproj" />
     <ProjectReference Include="..\EligoCore.Service\EligoCore.Service.csproj" />
   </ItemGroup>
 

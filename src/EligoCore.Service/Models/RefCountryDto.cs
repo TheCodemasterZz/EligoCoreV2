@@ -13,17 +13,13 @@ namespace EligoCore.Service.Models
 
     public static class RefCountryDtoExtensions
     {
-        public static RefCountryDto Assemble(this RefCountry refCountry)
+        public static RefCountryCommand Assemble(this RefCountryDto dto)
         {
-            if (refCountry == null) return null;
+            if (dto == null) throw new ArgumentNullException(nameof(dto));
 
-            var dto = new RefCountryDto
-            {
-                Code = refCountry.Code,
-                Name = refCountry.Name
-            };
-
-            return dto;
+            var command = new RefCountryCommand(dto.Code,
+                                                    dto.Name);
+            return command;
         }
     }
 }

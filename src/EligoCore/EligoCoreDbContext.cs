@@ -39,6 +39,22 @@ namespace EligoCore
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
+
+            var applyGenericMethod = typeof(ModelBuilder).GetMethod("ApplyConfiguration", BindingFlags.Instance | BindingFlags.Public);
+
+            foreach (var type in Assembly.GetExecutingAssembly().GetTypes()
+                .Where(c => c.IsClass && !c.IsAbstract && !c.ContainsGenericParameters))
+            {
+                foreach (var iface in type.GetInterfaces())
+                {
+                    if (iface.IsConstructedGenericType && iface.GetGenericTypeDefinition() == typeof(IEntityTypeConfiguration<>))
+                    {
+                        var applyConcreteMethod = applyGenericMethod.MakeGenericMethod(iface.GenericTypeArguments[0]);
+                        applyConcreteMethod.Invoke(modelBuilder, new object[] { Activator.CreateInstance(type) });
+                        break;
+                    }
+                }
+            }
         }
 
         IEnumerable<TEntity> IUnitOfWork.GetAll<TEntity>(Func<TEntity, bool> predicate)
